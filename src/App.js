@@ -48,7 +48,6 @@ const App = () => {
 					{messages.map((msg, i) => (
 						<ChatBubble key={i} message={msg.message} isUser={msg.isUser} />
 					))}
-					{/* <div ref={messagesEndRef} /> */}
 				</div>
 				<div className="chat-input mt-6">
 					<ChatInput onSubmit={sendMessage} />
