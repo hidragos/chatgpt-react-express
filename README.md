@@ -15,8 +15,8 @@ This is a React-based application that leverages the power of OpenAI's ChatGPT A
 
 - [x] React-based frontend that provides a smooth user experience.
 - [x] Integration with OpenAI's ChatGPT API for powerful natural language generation.
-- [] Responsive chat interface that adapts to various screen sizes.
-- [] Thorough error handling to ensure a seamless experience.
+- [ ] Responsive chat interface that adapts to various screen sizes.
+- [ ] Thorough error handling to ensure a seamless experience.
 
 ## 📋 Prerequisites
 
