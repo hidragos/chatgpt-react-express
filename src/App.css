@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.chat-container {
+  @apply h-screen flex flex-col justify-between;
+}
+
+.chat-messages {
+  @apply overflow-y-auto p-4 flex flex-col gap-4;
+}
+
+.chat-input {
+  @apply bg-gray-100 p-4;
+}
