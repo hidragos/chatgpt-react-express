@@ -8,9 +8,8 @@ This is a React-based application that leverages the power of OpenAI's ChatGPT A
 2. [Prerequisites](#prerequisites)
 3. [Installation](#installation)
 4. [Usage](#usage)
-5. [Configuration](#configuration)
-6. [Contributing](#contributing)
-7. [License](#license)
+5. [Contributing](#contributing)
+6. [License](#license)
 
 ## 🌟 Features
 
@@ -79,14 +78,6 @@ The application will now be running on `http://localhost:3000`. Open your browse
 3. The application will send the message to the ChatGPT API and display the generated response in the chat window.
 4. You can continue the conversation by sending more messages. The chat history will be visible, allowing for a more engaging and interactive conversation.
 
-## ⚙️ Configuration
-
-You can customize the ChatGPT API configuration by editing the `src/config.js` file. The following parameters can be adjusted:
-
-- `apiUrl`: The base URL for the OpenAI API.
-- `model`: The ChatGPT model to use (e.g., "gpt-4.5-turbo").
-- `maxTokens`: The maximum number of tokens to generate for the response.
-- `temperature`: Controls the randomness of the response (higher values make the output more random, while lower values make it more focused and deterministic).
 
 ## 🤝 Contributing
 
