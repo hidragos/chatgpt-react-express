@@ -1,5 +1,5 @@
 {
-	"name": "chatgpt-react-app",
+	"name": "chatgpt-react-express-app",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {

@@ -1,6 +1,6 @@
 # 🚀 ChatGPT React App
 
-This is a React-based application that leverages the power of OpenAI's ChatGPT API to generate human-like responses in a chat interface. This README.md will guide you through the setup and usage of this app. The Express server serves as a proxy to communicate with the ChatGPT API using gpt-turbo, as openai's own package has trouble using the gpt-3.5-turbo model.
+This is a React-based application that leverages the power of OpenAI's ChatGPT API to generate human-like responses in a chat interface. This README.md will guide you through the setup and usage of this app. The Express server serves as a proxy to communicate with the ChatGPT API using gpt-turbo, as openai package has trouble using the gpt-3.5-turbo model.
 
 ## 📚 Table of Contents
 
@@ -33,12 +33,12 @@ To set up the project on your local machine, follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/chatgpt-react-app.git
+git clone https://github.com/yourusername/chatgpt-react-express-app.git
 ```
 
 2. Change to the project directory:
 ```bash
-cd chatgpt-react-app
+cd chatgpt-react-express-app
 ```
 
 3. Install the dependencies:
