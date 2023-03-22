@@ -19,11 +19,7 @@ const App = () => {
 			const response = await axios.post(
 				`${config.apiUrl}`,
 				{
-					prompt:
-						'only respond to new message. previous messages: ' +
-						messages.map((msg) => msg.message).join(', ') +
-						', new message:' +
-						message,
+					prompt: 'only respond to new message. previous messages: ' + messages.map((msg) => msg.message).join(', ') + ', new message:' + message,
 				},
 				{
 					headers: {
@@ -43,8 +39,12 @@ const App = () => {
 
 	return (
 		<div className="app">
-			<ChatBubble></ChatBubble>
-			<ChatInput></ChatInput>
+			<div className="chat-container">
+				{messages.map((msg, index) => (
+					<ChatBubble key={index} message={msg.message} isUser={msg.isUser} />
+				))}
+			</div>
+			<ChatInput onSubmit={sendMessage} />
 		</div>
 	);
 };

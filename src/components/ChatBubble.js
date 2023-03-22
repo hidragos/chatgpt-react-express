@@ -1,8 +1,10 @@
 import React from 'react';
 
-const ChatBubble = () => {
+const ChatBubble = ({ message, isUser }) => {
   return (
-    <span> chat bubbles zone </span>
+    <div className={`chat-bubble ${isUser ? 'user' : 'chatgpt'}`}>
+      <p>{message}</p>
+    </div>
   );
 };
 
