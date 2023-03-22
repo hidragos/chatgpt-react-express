@@ -1,16 +1,27 @@
-require('dotenv').config();
-const express = require('express');
+import { Conversation } from 'gpt-turbo';
+import express from 'express';
+import dotenv from 'dotenv';
+import cors from 'cors';
+
+dotenv.config();
 
 const app = express();
-const port = 3500;
+app.use(express.json());
+app.use(cors());
 
-// Simple hello world get request
-app.get('/hello', (req, res) => {
-	const openai = process.env.OPENAI_API_KEY;
-	res.send(`key`+ openai);
+app.post('/chat', async (req, res) => {
+	const { prompt } = req.body;
+	const conversation = new Conversation({
+		apiKey: process.env.OPENAI_API_KEY,
+	});
+
+	const response = await conversation.prompt(prompt);
+
+	res.json(response);
 });
 
-// Start the server
-app.listen(port, () => {
-	console.log(`Example app listening at http://localhost:${port}`);
+const PORT = process.env.PORT || 3500;
+
+app.listen(PORT, () => {
+	console.log(`Server is running on port ${PORT}`);
 });
